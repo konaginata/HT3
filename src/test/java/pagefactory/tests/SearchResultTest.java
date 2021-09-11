@@ -7,7 +7,7 @@ import static org.testng.Assert.assertTrue;
 
 public class SearchResultTest extends BaseTest {
 
-    @Test (priority =2)
+    @Test
     public void testThatCheckBoxCallsOnlyHeadphones() {
         getHomePage().searchByKeyword("apple watch");
         getSearchResultPage().clickOnHeadPhonesCheckbox();

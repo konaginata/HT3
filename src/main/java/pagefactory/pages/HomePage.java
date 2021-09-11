@@ -9,16 +9,7 @@ public class HomePage extends BasePage {
 
     @FindBy(xpath = "//input[@id='input_search']")
     private WebElement searchInput;
-    //
-//    @FindBy(xpath = "//span[@class='sidebar-item']")
-//    private WebElement productCatalogButton;
-//
-//    @FindBy(xpath = "//ul[contains(@class,'sidebar-list')]//a[contains(@href, 'apple-store')]")
-//    private WebElement appleSoreButton;
-//
-//    @FindBy(xpath = "//div[contains(@class,'header-bottom__cart')]//div[contains(@class,'cart_count')]")
-//    private WebElement amountOfProductsInCart;
-//
+
     @FindBy(xpath = "//button[@class='button-reset search-btn']")
     private WebElement searchButton;
 
@@ -37,15 +28,12 @@ public class HomePage extends BasePage {
     @FindBy(xpath = "//a[ text( )='Контакты' and @class='header-top__item']")
     private WebElement contactsButton;
 
-    @FindBy(xpath = "//img[@src='https://avic.ua/assets/cache/products/244460/apple-airpods-with-charging-case-mv7n2-1-prod_main.jpg']")
+    @FindBy(xpath = "//img[@src='https://avic.ua/assets/cache/products/244460/apple-airpods-with-charging-case-mv7n2" +
+            "-1-prod_main.jpg']")
     private WebElement appleAirPodsCategoryBox;
 
     @FindBy(xpath = "//a[@class='main-btn main-btn--green main-btn--large']")
     private WebElement buy;
-
-//    @FindBy(xpath = "//span[@class='js_plus btn-count btn-count--plus ']")
-//    private WebElement plus;
-
 
     public HomePage(WebDriver driver) {
         super(driver);
@@ -71,32 +59,20 @@ public class HomePage extends BasePage {
         searchButton.click();
     }
 
-    public void clikInstallmentTermsButton() {
+    public void clickInstallmentTermsButton() {
         installmentTermsButton.click();
     }
 
-    public void clikContactsButton() {
+    public void clickContactsButton() {
         contactsButton.click();
     }
 
-    public void clikAppleAirPodsCategoryBox() {
+    public void clickAppleAirPodsCategoryBox() {
         appleAirPodsCategoryBox.click();
     }
 
-    public void clickBuy() {buy.click();}
-
-//    public void clickPlus() {plus.click();}
-//
-//    public void clickOnProductCatalogButton() {
-//        productCatalogButton.click();
-//    }
-//
-//    public void clickOnAppleStoreButton() {
-//        appleSoreButton.click();
-//    }
-//
-//    public String getTextOfAmountProductsInCart() {
-//        return amountOfProductsInCart.getText();
-//    }
+    public void clickBuy() {
+        buy.click();
+    }
 
 }

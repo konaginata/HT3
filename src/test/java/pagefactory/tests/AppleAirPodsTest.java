@@ -5,9 +5,9 @@ import org.testng.annotations.Test;
 import static org.testng.Assert.assertEquals;
 
 public class AppleAirPodsTest extends BaseTest {
-    @Test (priority = 2)
+    @Test
     public void testThatTotalAmountIsChanged() {
-        getHomePage().clikAppleAirPodsCategoryBox();
+        getHomePage().clickAppleAirPodsCategoryBox();
         getHomePage().clickBuy();
         getAppleAirPodsPage().implicitWait(10);
         getAppleAirPodsPage().clickPlus();

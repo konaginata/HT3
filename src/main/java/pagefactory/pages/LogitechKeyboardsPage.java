@@ -11,7 +11,7 @@ public class LogitechKeyboardsPage extends BasePage {
     @FindBy(xpath = "//div[@class='prod-cart__descr']")
     private List<WebElement> items;
 
-    public int countItems(){
+    public int countItems() {
         return getItemsList().size();
     }
 

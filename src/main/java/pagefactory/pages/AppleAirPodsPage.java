@@ -14,7 +14,6 @@ public class AppleAirPodsPage extends BasePage {
     @FindBy(xpath = "//div[@class='item-total']/span[@class='prise']")
     private WebElement price;
 
-
     public AppleAirPodsPage(WebDriver driver) {
         super(driver);
     }

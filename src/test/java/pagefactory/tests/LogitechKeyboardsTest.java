@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 import static org.testng.Assert.assertEquals;
 
 public class LogitechKeyboardsTest extends BaseTest {
-    @Test (priority = 1)
+    @Test
     public void testThatLogitechKeyboardsPageShows12Items() {
         getHomePage().implicitWait(10);
         getHomePage().moveToComputers();

@@ -6,10 +6,10 @@ import static org.testng.Assert.assertFalse;
 
 public class CheckContainsTest extends BaseTest {
 
-    @Test (priority =2)
+    @Test
     public void testThatUrlContainsWords() {
-        getHomePage().clikInstallmentTermsButton();
-        getHomePage().clikContactsButton();
+        getHomePage().clickInstallmentTermsButton();
+        getHomePage().clickContactsButton();
         assertFalse(getCurrentUrl().contains("usloviya-rassrochki"));
     }
 }
